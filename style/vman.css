@@ -63,3 +63,8 @@ a{
 a:hover{
     text-decoration:underline;
 }
+nav a{
+    border-left: thin solid white;
+    padding-left: 5pt;
+    padding-right: 2pt;
+}

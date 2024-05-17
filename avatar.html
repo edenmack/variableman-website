@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>variableman Avatar Builder</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+        <!--link rel="stylesheet" href="style/vman.css"-->
+
+		<!--script src="avatar.json"></script-->
+		<script language="JavaScript">
+let frames = {
+
+		"background":
+		{
+			"frame": {"x":0,"y":0,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"head":
+		{
+			"frame": {"x":375,"y":0,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"eyes1":
+		{
+			"frame": {"x":750,"y":0,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"eyes2":
+		{
+			"frame": {"x":1125,"y":0,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"eyes3":
+		{
+			"frame": {"x":1500,"y":0,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"hair1":
+		{
+			"frame": {"x":0,"y":349,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"hair2":
+		{
+			"frame": {"x":375,"y":349,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"hair3":
+		{
+			"frame": {"x":750,"y":349,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"hair4":
+		{
+			"frame": {"x":1125,"y":349,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"hair5":
+		{
+			"frame": {"x":1500,"y":349,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"hair6":
+		{
+			"frame": {"x":0,"y":698,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"beard1":
+		{
+			"frame": {"x":375,"y":698,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"beard2":
+		{
+			"frame": {"x":750,"y":698,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"beard3":
+		{
+			"frame": {"x":1125,"y":698,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"mustache1":
+		{
+			"frame": {"x":1500,"y":698,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"glasses1":
+		{
+			"frame": {"x":0,"y":1047,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"glasses2":
+		{
+			"frame": {"x":375,"y":1047,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"bow1":
+		{
+			"frame": {"x":750,"y":1047,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"catEars":
+		{
+			"frame": {"x":1125,"y":1047,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"hairClip":
+		{
+			"frame": {"x":1500,"y":1047,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"halo":
+		{
+			"frame": {"x":0,"y":1396,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		},
+		"horns":
+		{
+			"frame": {"x":375,"y":1396,"w":375,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":349},
+			"sourceSize": {"w":375,"h":349},
+			"pivot": {"x":0.5,"y":0.5}
+		}};
+
+let SPRITE_SHEET = new Image();
+let CONTEXT;
+let IMAGE_STACK = ["background","head"];
+const SPRITE_WIDTH = 375;
+const SPRITE_HEIGHT = 349;
+
+function setup(){
+	var canvas = document.getElementById("avatarBuilderCanvas");
+	canvas.width = SPRITE_WIDTH;
+	canvas.height = SPRITE_HEIGHT;
+	canvas.style.border = "thin solid black";
+	SPRITE_SHEET.src = "img/avatarBuilder.png";
+	CONTEXT = document.getElementById("avatarBuilderCanvas").getContext("2d");
+	drawStack();
+}
+function getContext(){
+	return CONTEXT;
+}
+function clearAll(){
+	clear();
+	IMAGE_STACK = ["background","head"];
+	drawStack();
+}
+function clear(){
+	console.groupCollapsed("Clearing Image");
+	console.log("clear rect");
+	getContext().clearRect(0,0,SPRITE_WIDTH,SPRITE_HEIGHT);
+	console.groupEnd();
+}
+
+function drawStack(){
+	console.groupCollapsed("Drawing");
+	clear();
+	for(f=0; f<IMAGE_STACK.length; f++){
+		drawImage(IMAGE_STACK[f]);
+	}
+	console.groupEnd();
+}
+
+function drawImage(frameID){
+	console.log("drawing " + frameID);
+	getContext().drawImage(
+		SPRITE_SHEET,
+		frames[frameID]["frame"]["x"],
+		frames[frameID]["frame"]["y"],
+		frames[frameID]["frame"]["w"],
+		frames[frameID]["frame"]["h"],
+		0,
+		0,
+		SPRITE_WIDTH,
+		SPRITE_HEIGHT
+	);
+	//getContext().drawImage(SPRITE_SHEET,0,0);
+}
+
+function selectFrame(){
+	var xScroll,yScroll;
+	if(window.pageYOffset){
+		xScroll = window.pageXOffset;
+		yScroll = window.pageYOffset;
+	}else{
+		xScroll = document.documentElement.scrollLeft;
+		yScroll = document.documentElement.scrollTop;
+	}
+
+	var x = event.x - document.getElementById("avatarPalet").offsetLeft - xScroll;
+	var y = event.y - document.getElementById("avatarPalet").offsetTop - yScroll;
+
+	//var scale = 100 / parseInt(document.getElementById("avatarPalet").style.width.replace(/(\d{2}).*/,"$1"));
+	var scale = 1875 / parseInt(document.getElementById("avatarPalet").style.width.replace("px",""))
+
+
+	var x1,x2,y1,y2;
+
+	for(f in frames){
+		x1 = frames[f]["frame"]["x"]/scale;
+		x2 = x1 + frames[f]["frame"]["w"]/scale;
+		y1 = frames[f]["frame"]["y"]/scale;
+		y2 = y1 + frames[f]["frame"]["h"]/scale;
+
+		if(
+			x1<x && x<x2
+			&&y1<y && y<y2
+		){
+
+			var add = true;
+			for(i=0; i<IMAGE_STACK.length; i++){
+				if(IMAGE_STACK[i] == f){
+					IMAGE_STACK.splice(i, 1);
+					add = false;
+				}
+
+			}
+			if(add){
+				IMAGE_STACK.push(f);
+			}
+
+			drawStack();
+			break;
+		}
+	}
+}
+
+		</script>
+	</head>
+	<body onload="setup();">
+		<canvas id="avatarBuilderCanvas"></canvas>
+		<img id="avatarPalet" src="img/avatarBuilder.png" style="width:508px;" onClick="selectFrame();">
+		<br/><a href="JavaScript:clearAll();">clear</a> <em>right click image to save or copy</em>
+
+		<HR/>
+		<a href="./"><img src="img/home.png" style="background-color: black; border-radius: 10px;">Home</a>
+	</body>
+</html>
