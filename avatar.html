@@ -10,6 +10,40 @@
         <!--link rel="stylesheet" href="style/vman.css"-->
 
 		<!--script src="avatar.json"></script-->
+		<style>
+BODY{
+    background-color: gainsboro;
+    align-content: center;
+}			
+main{
+    width:900px;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header{
+    background-color: black;
+    color:white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size:1.8em;
+    padding:10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;    
+}
+header a{
+    font-size:.8em;
+    color:white;
+}
+nav a{
+    border-left: thin solid white;
+    padding-left: 5pt;
+    padding-right: 2pt;
+}
+		</style>
 		<script language="JavaScript">
 let frames = {
 
@@ -318,11 +352,21 @@ function selectFrame(){
 		</script>
 	</head>
 	<body onload="setup();">
+		<main>            
+			<header>
+				variableman.com
+				<nav>
+					<a href="./" title="home" style="border:thin none white;"><img src="img/home.png" height="30px"/></a>
+					<a href="ralyn.html" title="ralyn programming language">ralyn</a>
+					<a href="avatar.html" title="avatar builder">avatar builder</a>
+				</nav>
+			</header>
+			The avatar builder is an experiment with the HTML5 canvas element. Click on features to add or 
+			remove them from the canvas. Once your avatar is complete, right click on the canvas to download 
+			a PNG. Use without restriction.
+		</main>
 		<canvas id="avatarBuilderCanvas"></canvas>
 		<img id="avatarPalet" src="img/avatarBuilder.png" style="width:508px;" onClick="selectFrame();">
 		<br/><a href="JavaScript:clearAll();">clear</a> <em>right click image to save or copy</em>
-
-		<HR/>
-		<a href="./"><img src="img/home.png" style="background-color: black; border-radius: 10px;">Home</a>
 	</body>
 </html>
