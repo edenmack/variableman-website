@@ -63,6 +63,9 @@ a{
 a:hover{
     text-decoration:underline;
 }
+a.clean:hover{
+    text-decoration: none;
+}
 nav a{
     border-left: thin solid white;
     padding-left: 5pt;
